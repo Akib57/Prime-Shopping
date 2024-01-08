@@ -10,4 +10,4 @@ if(mode === 'pro'){
     base_url = local
 }
 
-export { base_url }
+export { base_url,mode }

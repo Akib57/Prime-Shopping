@@ -8,6 +8,8 @@ import FadeLoader from 'react-spinners/FadeLoader'
 import { useSelector, useDispatch } from 'react-redux'
 import { customer_login, messageClear } from '../store/reducers/authReducer'
 import toast from 'react-hot-toast'
+import {mode} from '../utils/config'
+import login_image from '../assets/login.jpg'
 
 const Login = () => {
 
@@ -87,10 +89,14 @@ const Login = () => {
                             <div className='text-center text-slate-600 pt-1'>
                                 <p>You have no account ? <Link className='text-blue-500' to='/register'>Register</Link></p>
                             </div>
+                            <div className='text-center text-slate-600 pt-1'>
+                                <p><a target='_black' className='text-blue-500' href= {mode ==='dev' ? 'http://localhost:3001/register': 'https://prime-shopping-dashboard.vercel.app/register'}>Register</a> seller account</p>
+                            </div>
                         </div>
                         <div className='w-full h-full py-4 pr-4'>
-                            <img className='w-full h-[95%]' src="http://localhost:3000/images/login.jpg" alt="" />
+                            <img className='w-full h-[95%]' src= {login_image} alt="" />
                         </div>
+
                     </div>
                 </div>
             </div>
