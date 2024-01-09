@@ -5,6 +5,8 @@ import { useLocation, Link, useNavigate } from 'react-router-dom'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 import { useDispatch, useSelector } from 'react-redux'
 import { place_order } from '../store/reducers/orderReducer'
+import order_img from '../assets/order.jpg'
+
 
 const Shipping = () => {
 
@@ -49,7 +51,7 @@ const Shipping = () => {
     return (
         <div>
             <Headers />
-            <section className='bg-[url("http://localhost:3000/images/banner/order.jpg")] h-[220px] mt-6 bg-cover bg-no-repeat relative bg-left'>
+            <section className='bg-[url{order_img}] h-[220px] mt-6 bg-cover bg-no-repeat relative bg-left'>
                 <div className='absolute left-0 top-0 w-full h-full bg-[#2422228a]'>
                     <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
                         <div className='flex flex-col justify-center gap-1 items-center h-full w-full text-white'>
