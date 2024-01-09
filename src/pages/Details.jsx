@@ -18,7 +18,6 @@ import Reviews from '../components/Reviews'
 import { get_product } from '../store/reducers/homeReducer'
 import { add_to_card, messageClear, add_to_wishlist } from '../store/reducers/cardReducer'
 import toast from 'react-hot-toast'
-import order_img from '../assets/order.jpg'
 
 const Details = () => {
 
@@ -154,7 +153,7 @@ const Details = () => {
     return (
         <div>
             <Headers />
-            <div className='bg-[url{order_img}] h-[220px] mt-6 bg-cover bg-no-repeat relative bg-left'>
+            <div className='bg-[url("http://localhost:3000/images/banner/order.jpg")] h-[220px] mt-6 bg-cover bg-no-repeat relative bg-left'>
                 <div className='absolute left-0 top-0 w-full h-full bg-[#2422228a]'>
                     <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
                         <div className='flex flex-col justify-center gap-1 items-center h-full w-full text-white'>
