@@ -2,7 +2,6 @@ import React from 'react'
 import Carousel from 'react-multi-carousel'
 import  'react-multi-carousel/lib/styles.css'
 import { Link } from 'react-router-dom'
-import banner_image from '../assets/banner/${img}.jpg'
 const Banner = () => {
     const responsive = {
         superLargeDesktop: {
@@ -37,7 +36,7 @@ const Banner = () => {
                             >
                                 {
                                     [1, 2, 3, 4, 5, 6, 7].map((img, i) => <Link className='lg-md:h-[440px] h-auto w-full block' key={i} to='#'>
-                                        <img src={`../assets/banner/${img}.jpg`} alt="" />
+                                        <img src={`http://localhost:3000/images/banner/${img}.jpg`} alt="" />
                                     </Link>)
                                 }
                             </Carousel>
